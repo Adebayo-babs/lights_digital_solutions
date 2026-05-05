@@ -77,7 +77,7 @@ transition: all 0.2s; letter-spacing: 0.2px;
 
 /* ── HERO ── */
 .hero {
-min-height: auto;
+min-height: 100vh;
 background: var(--white);
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -85,7 +85,7 @@ align-items: center;
 padding: 80px 60px 60px;
 gap: 60px;
 position: relative;
-overflow: visible;
+overflow: hidden;
 }
 .hero::before {
 content: '';
@@ -678,56 +678,6 @@ section { padding: 72px 24px; }
 .process-steps::before { display: none; }
 footer { padding: 36px 24px; }
 .cta-section { padding: 72px 24px; }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    grid-template-columns: 1fr; /* stack */
-    padding: 100px 20px 40px; /* reduce side spacing */
-    gap: 40px;
-  }
-
-  .hero-left {
-    width: 100%;
-  }
-
-  .hero-right {
-    width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-    letter-spacing: -1px;
-  }
-
-  .hero p {
-    font-size: 15px;
-    max-width: 100%;
-  }
-
-  .hero-btns {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-stats {
-    gap: 20px;
-  }
-
-  .stat-divider {
-    display: none;
-  }
-
-  .btn-primary,
-  .btn-outline {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .carousel-viewport {
-    height: auto;
-    min-height: 260px;
-  }
 }
 
 /* FCW */
