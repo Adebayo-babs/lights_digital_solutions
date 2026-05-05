@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lights Digital Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- Favicon (standard) -->
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+
+<!-- Android / Chrome -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Theme color -->
+<meta name="theme-color" content="#0043FF">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#home" class="logo-mark">
+    <img id="siteLogo" class="brand-icon" src="brand_logo.png" alt="Lights Digital Solutions"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Portfolio</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started →</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge fade-in"><span class="dot"></span> Digital Transformation Experts</div>
+    <h1 class="fade-in delay-1">Your Digital <span class="accent">Growth</span> Starts <span class="yellow">Here.</span></h1>
+    <p class="fade-in delay-2">We build high-performing websites, mobile apps, and intranet systems that automate your operations and drive real business growth.</p>
+    <div class="hero-btns fade-in delay-3">
+      <a href="#projects" class="btn-primary">View Our Work ↗</a>
+      <a href="#contact" class="btn-outline">Talk to Us →</a>
+    </div>
+    <div class="hero-stats fade-in delay-4">
+      <div>
+        <div class="stat-num">100<span>+</span></div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div>
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div>
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO RIGHT: CAROUSEL -->
+  <div class="hero-right fade-in delay-5">
+    <!-- Floating badges -->
+    <div class="hero-float-1">
+      <span style="font-size:18px;">🚀</span>
+    </div>
+    <div class="hero-float-2">
+      <span class="float-dot" style="background:#22c55e;"></span>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-main">
+        <!-- Browser Chrome -->
+        <div class="browser-chrome">
+          <div class="chrome-dots">
+            <div class="chrome-dot red"></div>
+            <div class="chrome-dot yellow"></div>
+            <div class="chrome-dot green"></div>
+          </div>
+          <div class="chrome-bar">
+            <svg viewBox="0 0 16 16"><path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14.4C4.5 14.4 1.6 11.5 1.6 8S4.5 1.6 8 1.6 14.4 4.5 14.4 8 11.5 14.4 8 14.4z"/></svg>
+            <span id="carouselUrl">lightdigital.com/work/shopease</span>
+          </div>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack">
+
+            <!-- Slide 1: E-Commerce -->
+            <div class="carousel-slide slide-ecom">
+              <div class="slide-nav-bar">
+                <div class="slide-nav-logo">ShopEase</div>
+                <div class="slide-nav-links">
+                  <span class="slide-nav-link">Products</span>
+                  <span class="slide-nav-link">Deals</span>
+                  <span class="slide-nav-link">About</span>
+                </div>
+                <div class="slide-nav-cta">Shop Now</div>
+              </div>
+              <div class="slide-hero-area">
+                <div class="slide-hero-text">
+                  <div class="slide-badge">NEW ARRIVALS</div>
+                  <div class="slide-h">Shop the Best Deals Online</div>
+                  <div class="slide-p">Thousands of products at your fingertips. Fast delivery across Nigeria.</div>
+                  <div class="slide-btn">Browse Collection →</div>
+                </div>
+                <div class="slide-hero-img">🛒</div>
+              </div>
+              <div class="slide-products">
+                <div class="slide-product">
+                  <div class="slide-product-img">👟</div>
+                  <div class="slide-product-name">Air Runners</div>
+                  <div class="slide-product-price">₦24,500</div>
+                </div>
+                <div class="slide-product">
+                  <div class="slide-product-img">👜</div>
+                  <div class="slide-product-name">Tote Bag</div>
+                  <div class="slide-product-price">₦12,000</div>
+                </div>
+                <div class="slide-product">
+                  <div class="slide-product-img">⌚</div>
+                  <div class="slide-product-name">Smart Watch</div>
+                  <div class="slide-product-price">₦89,000</div>
+                </div>
+                <div class="slide-product">
+                  <div class="slide-product-img">🎧</div>
+                  <div class="slide-product-name">Headphones</div>
+                  <div class="slide-product-price">₦45,000</div>
+                </div>
+              </div>
+              <div class="slide-label">E-Commerce Platform</div>
+            </div>
+
+            <!-- Slide 2: SaaS Dashboard -->
+            <div class="carousel-slide slide-saas">
+              <div class="dash-sidebar">
+                <div class="dash-sidebar-icon active">📊</div>
+                <div class="dash-sidebar-icon">👥</div>
+                <div class="dash-sidebar-icon">📦</div>
+                <div class="dash-sidebar-icon">💬</div>
+                <div class="dash-sidebar-icon">⚙️</div>
+              </div>
+              <div class="dash-main">
+                <div class="dash-header">
+                  <div class="dash-title">Analytics Dashboard</div>
+                  <div class="dash-date">May 2026</div>
+                </div>
+                <div class="dash-cards">
+                  <div class="dash-card">
+                    <div class="dash-card-label">Revenue</div>
+                    <div class="dash-card-val">₦4.2M</div>
+                    <div class="dash-card-delta">↑ 18% this month</div>
+                  </div>
+                  <div class="dash-card">
+                    <div class="dash-card-label">Users</div>
+                    <div class="dash-card-val">8,491</div>
+                    <div class="dash-card-delta">↑ 34% growth</div>
+                  </div>
+                  <div class="dash-card">
+                    <div class="dash-card-label">Orders</div>
+                    <div class="dash-card-val">1,204</div>
+                    <div class="dash-card-delta">↑ 9% vs last</div>
+                  </div>
+                </div>
+                <div class="dash-chart">
+                  <div class="dash-chart-label">Monthly Revenue Trend</div>
+                  <div class="dash-bars">
+                    <div class="dash-bar" style="height:40%"></div>
+                    <div class="dash-bar" style="height:55%"></div>
+                    <div class="dash-bar" style="height:48%"></div>
+                    <div class="dash-bar hi" style="height:70%"></div>
+                    <div class="dash-bar" style="height:62%"></div>
+                    <div class="dash-bar hi" style="height:85%"></div>
+                    <div class="dash-bar" style="height:75%"></div>
+                    <div class="dash-bar hi" style="height:90%"></div>
+                    <div class="dash-bar" style="height:80%"></div>
+                    <div class="dash-bar hi" style="height:100%"></div>
+                    <div class="dash-bar" style="height:88%"></div>
+                    <div class="dash-bar hi" style="height:95%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-label" style="color:rgba(255,255,255,0.9);">Business Dashboard</div>
+            </div>
+
+            <!-- Slide 3: Corporate Website -->
+            <div class="carousel-slide slide-corp">
+              <div class="corp-nav">
+                <div class="corp-logo">
+                  <div class="corp-logo-icon">P</div>
+                  <div class="corp-logo-text">Pinnacle Logistics</div>
+                </div>
+                <div class="corp-nav-links">
+                  <span class="corp-nav-link">Services</span>
+                  <span class="corp-nav-link">About</span>
+                  <span class="corp-nav-link">Contact</span>
+                </div>
+                <div class="corp-btn">Get Quote</div>
+              </div>
+              <div class="corp-hero">
+                <div class="corp-left">
+                  <div class="corp-tag">LOGISTICS SOLUTIONS</div>
+                  <div class="corp-h">Fast & Reliable<br>Delivery Across Africa</div>
+                  <div class="corp-p">End-to-end supply chain management for businesses of every size. Track your shipments in real-time.</div>
+                  <div class="corp-actions">
+                    <div class="corp-btn-main">Get Started</div>
+                    <div class="corp-btn-sec">Our Services</div>
+                  </div>
+                </div>
+                <div class="corp-right">🚛</div>
+              </div>
+              <div class="corp-stats-bar">
+                <div class="corp-stat">
+                  <div class="corp-stat-n">200+</div>
+                  <div class="corp-stat-l">Daily Deliveries</div>
+                </div>
+                <div class="corp-stat">
+                  <div class="corp-stat-n">36</div>
+                  <div class="corp-stat-l">States Covered</div>
+                </div>
+                <div class="corp-stat">
+                  <div class="corp-stat-n">99%</div>
+                  <div class="corp-stat-l">On-Time Rate</div>
+                </div>
+              </div>
+              <div class="slide-label">Corporate Website</div>
+            </div>
+
+            <!-- Slide 4: Healthcare -->
+            <div class="carousel-slide slide-health">
+              <div class="health-nav">
+                <div class="health-logo-text">MediTrack Pro</div>
+                <div style="display:flex;gap:12px;">
+                  <span style="font-size:10px;color:#059669;">Patients</span>
+                  <span style="font-size:10px;color:#059669;">Doctors</span>
+                  <span style="font-size:10px;color:#059669;">About</span>
+                </div>
+                <div class="health-nav-pill">Book Appointment</div>
+              </div>
+              <div class="health-main">
+                <div class="health-left">
+                  <div class="health-badge">HEALTH MANAGEMENT</div>
+                  <div class="health-h">Your Health,<br>Tracked Smart</div>
+                  <div class="health-p">Medication reminders, doctor consultations, and health tracking — all in one place.</div>
+                  <div class="health-btn">Get Started Free</div>
+                </div>
+                <div class="health-right">
+                  <div class="health-card">
+                    <div class="health-card-icon">💊</div>
+                    <div>
+                      <div class="health-card-title">Medication Reminder</div>
+                      <div class="health-card-sub">Amoxicillin — 8:00 AM</div>
+                      <div class="health-prog"><div class="health-prog-bar" style="width:70%"></div></div>
+                    </div>
+                  </div>
+                  <div class="health-card">
+                    <div class="health-card-icon">❤️</div>
+                    <div>
+                      <div class="health-card-title">Heart Rate</div>
+                      <div class="health-card-sub">72 bpm — Normal</div>
+                      <div class="health-prog"><div class="health-prog-bar" style="width:55%;background:#22c55e"></div></div>
+                    </div>
+                  </div>
+                  <div class="health-card">
+                    <div class="health-card-icon">🩺</div>
+                    <div>
+                      <div class="health-card-title">Next Appointment</div>
+                      <div class="health-card-sub">Dr. Eze — May 12, 2026</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-label">Healthcare Web App</div>
+            </div>
+
+            <!-- Slide 5: Education LMS -->
+            <div class="carousel-slide slide-edu">
+              <div class="edu-nav">
+                <div class="edu-logo">EduPath LMS</div>
+                <div class="edu-links">
+                  <span class="edu-link">Courses</span>
+                  <span class="edu-link">Instructors</span>
+                  <span class="edu-link">Pricing</span>
+                </div>
+                <div class="edu-cta">Start Learning</div>
+              </div>
+              <div class="edu-hero">
+                <div class="edu-hero-text">
+                  <div class="edu-tag">E-LEARNING PLATFORM</div>
+                  <div class="edu-h">Learn Skills That<br>Get You Hired</div>
+                  <div class="edu-p">Over 500 courses taught by industry experts. Learn at your own pace, earn certified credentials.</div>
+                  <div class="edu-btn">Browse Courses →</div>
+                </div>
+                <div class="edu-img">🎓</div>
+              </div>
+              <div class="edu-courses">
+                <div class="edu-course">
+                  <div class="edu-course-icon">💻</div>
+                  <div class="edu-course-name">Web Design</div>
+                  <div class="edu-course-meta">1,240 students</div>
+                </div>
+                <div class="edu-course">
+                  <div class="edu-course-icon">📊</div>
+                  <div class="edu-course-name">Data Science</div>
+                  <div class="edu-course-meta">890 students</div>
+                </div>
+                <div class="edu-course">
+                  <div class="edu-course-icon">📱</div>
+                  <div class="edu-course-name">Mobile Dev</div>
+                  <div class="edu-course-meta">670 students</div>
+                </div>
+                <div class="edu-course">
+                  <div class="edu-course-icon">🤖</div>
+                  <div class="edu-course-name">AI & ML</div>
+                  <div class="edu-course-meta">540 students</div>
+                </div>
+              </div>
+              <div class="slide-label">Learning Management System</div>
+            </div>
+
+          </div><!-- /track -->
+        </div><!-- /viewport -->
+      </div><!-- /carousel-main -->
+
+      <!-- Controls -->
+      <div class="carousel-controls" style="margin-top:14px;">
+        <button class="carousel-arrow" id="prevBtn" aria-label="Previous">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M10 3L5 8l5 5"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots">
+          <div class="carousel-dot active" data-index="0"></div>
+          <div class="carousel-dot" data-index="1"></div>
+          <div class="carousel-dot" data-index="2"></div>
+          <div class="carousel-dot" data-index="3"></div>
+          <div class="carousel-dot" data-index="4"></div>
+        </div>
+        <button class="carousel-arrow" id="nextBtn" aria-label="Next">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6 3l5 5-5 5"/></svg>
+        </button>
+      </div>
+    </div><!-- /carousel-wrapper -->
+  </div>
+</section>
+
+<!-- CLIENTS STRIP -->
+<div class="clients-strip">
+  <div class="clients-label">Trusted By</div>
+  <div class="clients-logos">
+    <div class="client-logo">Pinnacle Logistics</div>
+    <div class="client-logo">StyleHaven Boutique</div>
+    <div class="client-logo">RideFlow Technologies</div>
+    <div class="client-logo">Meridian Healthcare</div>
+    <div class="client-logo">Spark Academy</div>
+    <div class="client-logo">BrightPath Finance</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-label">About Us</div>
+  <div class="about-layout">
+    <div class="about-body">
+      <h2 class="section-title">Empowering Businesses with <span class="about-highlight">Smart Digital Technology.</span></h2>
+      <p>At Lights Digital Solutions, we empower businesses and organizations with innovative digital technologies designed to simplify operations and drive growth. We specialize in software application development and intranet solutions, creating reliable, scalable systems that enhance efficiency and improve productivity.</p>
+      <p>Our mission is to help businesses transition seamlessly from manual, outdated processes to fully automated digital systems that save time, reduce errors, and improve performance. We believe technology should not only solve problems but also create opportunities.</p>
+      <div class="personality-row">
+        <span class="personality-label">Brand Values</span>
+        <span class="personality-pill">Professional</span>
+        <span class="personality-pill">Reliable</span>
+        <span class="personality-pill">Innovative</span>
+        <span class="personality-pill">Efficient</span>
+        <span class="personality-pill">Bold</span>
+        <span class="personality-pill">Approachable</span>
+      </div>
+    </div>
+    <div>
+      <div class="about-big-card">
+        <h3>Our Brand Promise</h3>
+        <p>We stand for reliability, scalability, and smart innovation — empowering organizations to move beyond manual processes into fully automated, productive digital systems that shape a smarter and more connected future.</p>
+        <div class="about-pill-row">
+          <span class="about-pill">🚀 Innovation-First</span>
+          <span class="about-pill">🔒 Scalable Systems</span>
+          <span class="about-pill">🤝 Long-term Partnership</span>
+          <span class="about-pill">⚡ Agile Delivery</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mvp-grid">
+    <div class="mvp-card purpose">
+      <div class="mvp-icon">🌟</div>
+      <div class="mvp-label">Our Purpose</div>
+      <h3>Why We Exist</h3>
+      <p>To empower businesses and organizations with smart digital solutions that simplify operations, improve efficiency, and create opportunities for sustainable growth in an increasingly digital world.</p>
+    </div>
+    <div class="mvp-card mission">
+      <div class="mvp-icon">🎯</div>
+      <div class="mvp-label">Our Mission</div>
+      <h3>What We Do Every Day</h3>
+      <p>To provide reliable, scalable, and innovative software applications and intranet solutions that help businesses transition from manual processes to fully automated digital systems.</p>
+    </div>
+    <div class="mvp-card vision">
+      <div class="mvp-icon">🔭</div>
+      <div class="mvp-label">Our Vision</div>
+      <h3>Where We're Headed</h3>
+      <p>To become a trusted leader in digital transformation, enabling organizations of all sizes to thrive through technology-driven solutions that shape a smarter and more connected future.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+    <div>
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Engineering<br>Digital Excellence.</h2>
+    </div>
+    <p class="section-sub">From custom web platforms to powerful mobile apps — we build the digital systems your organization needs to thrive.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <h3>Website Development</h3>
+      <p>Stunning, responsive websites built for performance and conversion. From landing pages to complex web platforms tailored to your business.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Android App Development</h3>
+      <p>Native and cross-platform Android applications designed for speed, usability, and seamless user experiences that keep customers engaged.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔗</div>
+      <h3>Intranet Solutions</h3>
+      <p>Custom internal platforms that strengthen team communication, centralize company data, and streamline workflows across your organization.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h3>Process Automation</h3>
+      <p>Replace manual, repetitive tasks with intelligent automated systems that save time, reduce errors, and dramatically boost productivity.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <h3>Digital Strategy</h3>
+      <p>Comprehensive digital roadmaps that align technology investments with your business goals — so every tool you use drives measurable results.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛡️</div>
+      <h3>Maintenance & Support</h3>
+      <p>Ongoing technical support, updates, and monitoring to ensure your digital products stay secure, fast, and running at peak performance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="projects" id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Built to<br>Perform.</h2>
+    </div>
+    <div class="tab-group">
+      <button class="tab active" onclick="filterProjects('all', this)">All</button>
+      <button class="tab" onclick="filterProjects('web', this)">Web</button>
+      <button class="tab" onclick="filterProjects('mobile', this)">Mobile</button>
+    </div>
+  </div>
+  <div class="projects-grid" id="projects-grid">
+    <div class="proj-card wide" data-type="web">
+      <div class="proj-thumb web"><div class="proj-thumb-inner"><div class="thumb-device"><div class="screen">🛒</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-web">Web App</span>
+        <h3>ShopEase — E-Commerce Platform</h3>
+        <p>A full-featured online store with inventory management, payment integration, and real-time order tracking for a Lagos-based retail chain.</p>
+        <div class="proj-tech"><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Paystack</span></div>
+      </div>
+    </div>
+    <div class="proj-card narrow" data-type="mobile">
+      <div class="proj-thumb mobile"><div class="proj-thumb-inner"><div class="thumb-phone"><div class="pscreen">💊</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-mobile">Android App</span>
+        <h3>MediTrack</h3>
+        <p>A medication reminder and health tracking app helping patients manage prescriptions with smart alerts and doctor communication features.</p>
+        <div class="proj-tech"><span class="tech-pill">Flutter</span><span class="tech-pill">Firebase</span></div>
+      </div>
+    </div>
+    <div class="proj-card third" data-type="web">
+      <div class="proj-thumb web" style="background:linear-gradient(135deg,#f0fdf4,#dcfce7)"><div class="proj-thumb-inner"><div class="thumb-device" style="width:65%"><div class="screen">📋</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-web">Web Platform</span>
+        <h3>HRConnect Intranet</h3>
+        <p>Internal HR portal for a 200+ employee company — attendance, payroll approvals, announcements, and document management.</p>
+        <div class="proj-tech"><span class="tech-pill">Vue.js</span><span class="tech-pill">Laravel</span></div>
+      </div>
+    </div>
+    <div class="proj-card third" data-type="mobile">
+      <div class="proj-thumb mobile"><div class="proj-thumb-inner"><div class="thumb-phone"><div class="pscreen">🚗</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-mobile">Android App</span>
+        <h3>RideFlow</h3>
+        <p>Real-time ride-hailing app with driver tracking, in-app payments, and trip history for a Nigerian transport startup.</p>
+        <div class="proj-tech"><span class="tech-pill">Kotlin</span><span class="tech-pill">Google Maps</span></div>
+      </div>
+    </div>
+    <div class="proj-card third" data-type="web">
+      <div class="proj-thumb web" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)"><div class="proj-thumb-inner"><div class="thumb-device" style="width:65%"><div class="screen">📰</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-fullstack">Full-Stack</span>
+        <h3>NewsPulse Portal</h3>
+        <p>A dynamic news and content management system with role-based publishing, SEO tools, and ad management for a media house.</p>
+        <div class="proj-tech"><span class="tech-pill">Next.js</span><span class="tech-pill">MongoDB</span></div>
+      </div>
+    </div>
+    <div class="proj-card wide" data-type="mobile">
+      <div class="proj-thumb mobile"><div class="proj-thumb-inner"><div class="thumb-device"><div class="screen">🎓</div></div><div class="thumb-phone"><div class="pscreen">📚</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-fullstack">Web + Android</span>
+        <h3>EduPath — Learning Management System</h3>
+        <p>A complete e-learning ecosystem — web dashboard for instructors and a companion Android app for students, with live classes, assignments, and certificates.</p>
+        <div class="proj-tech"><span class="tech-pill">React</span><span class="tech-pill">Flutter</span><span class="tech-pill">Node.js</span><span class="tech-pill">Zoom API</span></div>
+      </div>
+    </div>
+    <div class="proj-card narrow" data-type="web">
+      <div class="proj-thumb web" style="background:linear-gradient(135deg,#f0f9ff,#bae6fd)"><div class="proj-thumb-inner"><div class="thumb-device" style="width:65%"><div class="screen">💰</div></div></div></div>
+      <div class="proj-info">
+        <span class="proj-tag tag-web">Web App</span>
+        <h3>FinTrack Dashboard</h3>
+        <p>An expense tracking and financial reporting dashboard for SMEs with budget planning, invoicing, and real-time analytics.</p>
+        <div class="proj-tech"><span class="tech-pill">React</span><span class="tech-pill">Chart.js</span><span class="tech-pill">Express</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-label">How We Work</div>
+  <h2 class="section-title">Our Proven Process</h2>
+  <div class="process-steps">
+    <div class="step"><div class="step-num">01</div><h4>Discovery</h4><p>We deep-dive into your business goals, challenges, and target users to define the right solution.</p></div>
+    <div class="step"><div class="step-num">02</div><h4>Design</h4><p>We create wireframes and high-fidelity designs aligned with your brand before writing a single line of code.</p></div>
+    <div class="step"><div class="step-num">03</div><h4>Build</h4><p>Our engineers develop your product with clean, scalable code — with continuous testing at every stage.</p></div>
+    <div class="step"><div class="step-num">04</div><h4>Launch</h4><p>We deploy your product with a smooth go-live plan and monitor performance closely post-launch.</p></div>
+    <div class="step"><div class="step-num">05</div><h4>Grow</h4><p>Ongoing support, updates, and feature additions keep your digital product evolving with your business.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div style="text-align:center;margin-bottom:0;">
+    <div class="section-label" style="text-align:center;">Client Reviews</div>
+    <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
+    <p class="section-sub" style="margin:0 auto 56px;text-align:center;">Real feedback from businesses we've helped transform digitally.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testi-card featured">
+      <div class="stars">★★★★★</div>
+      <div class="quote-icon">"</div>
+      <p class="testi-text">Lights Digital Solutions completely transformed how our company operates. They built our intranet from scratch and the difference in team productivity has been night and day. Projects that used to take weeks now happen in hours.</p>
+      <div class="testi-author"><div class="author-avatar">AO</div><div><div class="author-name">Adewale Okonkwo</div><div class="author-role">CEO, Pinnacle Logistics Ltd</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote-icon" style="font-size:32px;color:var(--secondary);">"</div>
+      <p class="testi-text">The e-commerce platform they built for us exceeded all expectations. Sales went up 40% within the first month of launch. Professional, responsive, and delivered ahead of schedule.</p>
+      <div class="testi-author"><div class="author-avatar">FK</div><div><div class="author-name">Fatima Kamara</div><div class="author-role">Founder, StyleHaven Boutique</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote-icon" style="font-size:32px;color:var(--secondary);">"</div>
+      <p class="testi-text">Our Android app has over 5,000 downloads in its first quarter. The UI is smooth, the features are exactly what we requested, and the support after launch has been exceptional.</p>
+      <div class="testi-author"><div class="author-avatar">EB</div><div><div class="author-name">Emmanuel Bello</div><div class="author-role">CTO, RideFlow Technologies</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <div class="quote-icon" style="font-size:32px;color:var(--secondary);">"</div>
+      <p class="testi-text">They automated our manual invoicing and reporting process — saving us about 20 hours a week. The ROI was visible within the first month. These guys know their stuff!</p>
+      <div class="testi-author"><div class="author-avatar">NI</div><div><div class="author-name">Ngozi Ihejirika</div><div class="author-role">CFO, Meridian Healthcare Group</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★☆</div>
+      <div class="quote-icon" style="font-size:32px;color:var(--secondary);">"</div>
+      <p class="testi-text">Very professional team. The LMS they built is clean, easy to use, and our students love it. Communication was great throughout the entire project.</p>
+      <div class="testi-author"><div class="author-avatar">KA</div><div><div class="author-name">Kelechi Amadi</div><div class="author-role">Director, Spark Academy Online</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="section-label">Why Choose Us</div>
+  <div class="why-grid">
+    <div>
+      <h2 class="section-title">We Don't Just Build —<br>We Deliver Results.</h2>
+      <div class="why-items" style="margin-top:36px;">
+        <div class="why-item"><div class="why-item-icon">🎯</div><div><h4>Goal-Oriented Development</h4><p>Every feature we build is tied to a specific business outcome. No fluff — only what moves your metrics.</p></div></div>
+        <div class="why-item"><div class="why-item-icon">⚡</div><div><h4>Fast, Reliable Delivery</h4><p>We respect your timelines. Our agile process ensures predictable delivery without sacrificing quality.</p></div></div>
+        <div class="why-item"><div class="why-item-icon">🔐</div><div><h4>Scalable & Secure Architecture</h4><p>Built to grow with your business. We engineer systems that handle 10x traffic without breaking a sweat.</p></div></div>
+        <div class="why-item"><div class="why-item-icon">🤝</div><div><h4>Long-Term Partnership</h4><p>We're not just vendors — we're your digital growth partners, invested in your success long after launch.</p></div></div>
+      </div>
+    </div>
+    <div class="why-visual">
+      <div class="why-big-num">98%</div>
+      <div class="why-big-label">Client Satisfaction Rate</div>
+      <div class="why-stat-grid">
+        <div class="why-stat-card"><div class="why-stat-n">100+</div><div class="why-stat-l">Projects Delivered</div></div>
+        <div class="why-stat-card"><div class="why-stat-n">5+</div><div class="why-stat-l">Years Experience</div></div>
+        <div class="why-stat-card"><div class="why-stat-n">50+</div><div class="why-stat-l">Active Clients</div></div>
+        <div class="why-stat-card"><div class="why-stat-n">24h</div><div class="why-stat-l">Support Response</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="section-label" style="text-align:center;">Get In Touch</div>
+  <h2 class="section-title">Ready to Build<br><span style="color:var(--secondary);">Something Great?</span></h2>
+  <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+  <div class="cta-btns">
+    <a href="mailto:info@lightdigital.com" class="btn-primary">Start a Project →</a>
+    <a href="tel:+2348165798543" class="btn-outline">📞 Call Us</a>
+  </div>
+  <div class="contact-strip">
+    <div class="contact-item"><span>📧</span><span>info@lightdigital.com</span></div>
+    <div class="contact-item"><span>🌐</span><span>lightdigital.com</span></div>
+    <div class="contact-item"><span>📍</span><span>Igando, Lagos State</span></div>
+    <div class="contact-item"><span>📞</span><span>+234 816 579 8543</span></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+
+    <!-- Brand col -->
+    <div class="footer-brand-col">
+      <a href="#home" class="logo-mark">
+        <img id="siteLogoFooter" class="brand-icon" src="brand_logo.png" alt="Lights Digital Solutions"/>
+      </a>
+      <p class="footer-brand-desc">Empowering businesses across Africa with smart, scalable digital solutions — from web apps to full enterprise systems.</p>
+      <div class="footer-social-row">
+
+        <!-- Facebook -->
+        <a href="https://facebook.com/lightsdigitalsolutions" target="_blank" rel="noopener" class="social-btn fb" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.532-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/lightsdigitalsolutions" target="_blank" rel="noopener" class="social-btn ig" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@lightsdigitalsolutions" target="_blank" rel="noopener" class="social-btn tt" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+        </a>
+
+        <!-- X / Twitter -->
+        <a href="https://twitter.com/lightsdigital" target="_blank" rel="noopener" class="social-btn tw" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Services col -->
+    <div>
+      <div class="footer-col-title">Services</div>
+      <div class="footer-col-links">
+        <a href="#services">Website Development</a>
+        <a href="#services">Android App Development</a>
+        <a href="#services">Intranet Solutions</a>
+        <a href="#services">Process Automation</a>
+        <a href="#services">Digital Strategy</a>
+        <a href="#services">Maintenance & Support</a>
+      </div>
+    </div>
+
+    <!-- Company col -->
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-col-links">
+        <a href="#about">About Us</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#process">Our Process</a>
+        <a href="#testimonials">Client Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <!-- Contact col -->
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-col-links">
+        <a href="mailto:info@lightdigital.com">📧 info@lightdigital.com</a>
+        <a href="tel:+2348165798543">📞 +234 816 579 8543</a>
+        <a href="https://wa.me/2348165798543" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+        <a href="#">📍 Igando, Lagos State</a>
+        <a href="#">🌐 lightdigital.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Lights Digital Solutions. All rights reserved.</div>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CONTACT WIDGET -->
+<div class="fcw" id="fcw">
+  <div class="fcw-actions">
+    <div class="fcw-item">
+      <a class="fcw-action call" href="tel:+2348165798543" data-tip="Call Us" aria-label="Call">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.28-.28.68-.36 1.02-.25 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.34.02.73-.25 1.02l-2.2 2.2z"/></svg>
+      </a>
+    </div>
+    <div class="fcw-item">
+      <a class="fcw-action wa" href="https://wa.me/2348165798543?text=Hello%2C%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" data-tip="WhatsApp Us" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+  <button class="fcw-toggle" id="fcwToggle" aria-label="Contact options" aria-expanded="false">
+    <span class="ico ico-chat"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></span>
+    <span class="ico ico-close"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>
+  </button>
+</div>
+
+<script>
+// ── CAROUSEL ──
+const slides = document.querySelectorAll('.carousel-slide');
+const track = document.getElementById('carouselTrack');
+const dots = document.querySelectorAll('.carousel-dot');
+const urls = [
+  'lightdigital.com/work/shopease',
+  'lightdigital.com/work/dashboard',
+  'lightdigital.com/work/pinnacle',
+  'lightdigital.com/work/meditrack',
+  'lightdigital.com/work/edupath',
+];
+let current = 0;
+let autoTimer;
+
+function goTo(idx) {
+  current = (idx + slides.length) % slides.length;
+  track.style.transform = `translateX(-${current * 100}%)`;
+  dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  document.getElementById('carouselUrl').textContent = urls[current];
+}
+
+function startAuto() {
+  autoTimer = setInterval(() => goTo(current + 1), 3800);
+}
+function stopAuto() { clearInterval(autoTimer); }
+
+document.getElementById('nextBtn').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+document.getElementById('prevBtn').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+dots.forEach(d => d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.index); startAuto(); }));
+
+// Touch/swipe
+let touchX = 0;
+track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; stopAuto(); });
+track.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+  startAuto();
+});
+
+startAuto();
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ── PORTFOLIO FILTER ──
+function filterProjects(type, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  const cards = document.querySelectorAll('.proj-card');
+  cards.forEach(card => {
+    card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+  });
+  const visible = [...cards].filter(c => c.style.display !== 'none');
+  visible.forEach((c, i) => {
+    c.classList.remove('wide','narrow','full','third');
+    if (i % 3 === 0) c.classList.add('wide');
+    else if (i % 3 === 1) c.classList.add('narrow');
+    else c.classList.add('third');
+  });
+}
+
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.service-card, .proj-card, .testi-card, .step, .why-item, .mvp-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+  observer.observe(el);
+});
+
+// ── FCW ──
+const fcw = document.getElementById('fcw');
+const fcwBtn = document.getElementById('fcwToggle');
+fcwBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const isOpen = fcw.classList.toggle('is-open');
+  fcwBtn.setAttribute('aria-expanded', isOpen);
+});
+document.addEventListener('click', e => {
+  if (!fcw.contains(e.target)) {
+    fcw.classList.remove('is-open');
+    fcwBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+<!-- LOGO UPLOAD -->
+<input type="file" id="logoUploadInput" accept="image/*" style="display:none">
+</body>
+</html>
