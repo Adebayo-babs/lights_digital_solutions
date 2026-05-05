@@ -660,64 +660,24 @@ align-items: center; flex-wrap: wrap; gap: 14px;
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-.hero {
-    grid-template-columns: 1fr;
-    padding: 100px 40px 60px;
-    min-height: auto;         
-    gap: 48px;
-  }
-  .hero-right { max-width: 100%; width: 100%; }
-  .hero-float-1, .hero-float-2 { display: none; }
-  .carousel-wrapper { max-width: 100%; }
+.hero { grid-template-columns: 1fr; padding: 100px 40px 60px; }
+.hero-right { max-width: 100%; }
+.hero-float-1, .hero-float-2 { display: none; }
+.carousel-wrapper { max-width: 100%; }
 }
 @media (max-width: 900px) {
-.hero {
-    padding: 90px 24px 48px;
-    gap: 40px;
-    min-height: auto;
-  }
-  .hero p { max-width: 100%; }
-  .hero-stats { gap: 16px; justify-content: flex-start; }
-  .stat-num { font-size: 28px; }
-  .carousel-viewport { height: 280px; }
-  .slide-hero-area { padding: 12px 14px; }
-  .slide-products { padding: 0 14px 12px; gap: 6px; }
-  .edu-courses { padding: 0 14px 12px; gap: 6px; }
-}
-
-@media (max-width: 480px) {
-  .hero { padding: 80px 16px 40px; gap: 32px; }
-  .hero h1 { font-size: 36px; letter-spacing: -1px; }
-  .hero p { font-size: 15px; }
-  .hero-btns { flex-direction: column; gap: 10px; }
-  .btn-primary, .btn-outline {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-  .hero-stats { gap: 12px; flex-wrap: wrap; }
-  .stat-divider { display: none; }
-  .stat-num { font-size: 26px; }
-  .carousel-viewport { height: 250px; }
-  .slide-h { font-size: 15px; }
-  .slide-hero-img { width: 90px; height: 85px; font-size: 36px; }
-  .dash-cards { gap: 6px; }
-  .dash-card-val { font-size: 13px; }
-  .clients-strip {
-    padding: 24px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  .clients-label {
-    padding-right: 0;
-    border-right: none;
-    margin-right: 0;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-    width: 100%;
-  }
-  .clients-logos { flex-wrap: wrap; gap: 20px; }
+nav { padding: 16px 24px; }
+.nav-links { display: none; }
+section { padding: 72px 24px; }
+.hero { padding: 90px 24px 48px; }
+.hero-stats { gap: 20px; }
+.about-layout { grid-template-columns: 1fr; gap: 40px; }
+.mvp-grid { grid-template-columns: 1fr; }
+.why-grid { grid-template-columns: 1fr; }
+.proj-card.wide, .proj-card.narrow, .proj-card.third, .proj-card.full { grid-column: span 12; }
+.process-steps::before { display: none; }
+footer { padding: 36px 24px; }
+.cta-section { padding: 72px 24px; }
 }
 
 /* FCW */
