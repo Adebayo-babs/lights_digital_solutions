@@ -24,10 +24,14 @@
 <body>
 
 <!-- NAV -->
+
 <nav id="mainNav">
   <a href="#home" class="logo-mark">
     <img id="siteLogo" class="brand-icon" src="brand_logo.png" alt="Lights Digital Solutions"/>
   </a>
+   <button class="menu-toggle" id="menuToggle">
+  ☰
+  </button>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -837,6 +841,20 @@ document.addEventListener('click', e => {
     fcw.classList.remove('is-open');
     fcwBtn.setAttribute('aria-expanded', 'false');
   }
+});
+
+const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+const navItems = document.querySelectorAll('.nav-links a');
+
+navItems.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
 });
 </script>
 <!-- LOGO UPLOAD -->
