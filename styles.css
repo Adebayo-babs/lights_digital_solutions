@@ -23,6 +23,19 @@ body {
   overflow-x: hidden;
 }
 
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--secondary);
+  z-index: 999;
+}
+
+
+
 /* ── NAVBAR ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -676,6 +689,104 @@ footer {
   footer { padding: 36px 24px; }
   .cta-section { padding: 72px 24px; }
 }
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 24px;
+    display: none;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  nav {
+    padding: 0 20px;
+  }
+
+  .brand-icon {
+    width: 100px;
+    height: auto;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 110px 20px 40px;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 21px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+  .hero-btns {
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .hero-left,
+.hero-right {
+  overflow: hidden;
+}
+
+  .btn-primary,
+  .btn-outline {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .carousel-wrapper {
+    max-width: 100%;
+  }
+
+  .carousel-viewport {
+    height: 260px;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-num {
+    font-size: 28px;
+  }
+
+}
+
+
 
 /* FCW */
 .fcw { position: fixed; bottom: 30px; right: 30px; z-index: 9999; display: flex; flex-direction: column; align-items: center; gap: 12px; }
