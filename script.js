@@ -111,30 +111,108 @@ if (mainNav) {
 }
 
 
-// ─────────────────────────────────────────────
-// MOBILE MENU
-// ─────────────────────────────────────────────
+// Header
+fetch("components/header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
 
-const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.querySelector('.nav-links');
+    // Mobile menu
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.querySelector(".nav-links");
 
-if (menuToggle && navLinks) {
+    if (menuToggle && navLinks) {
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    }
+
+    // Navbar scroll effect
+    const mainNav = document.getElementById("mainNav");
+
+    if (mainNav) {
+      window.addEventListener("scroll", () => {
+        mainNav.classList.toggle("scrolled", window.scrollY > 40);
+      });
+    }
+  })
+  .catch(error => console.error("Header failed to load:", error));
+
+// Hero Section
+fetch("components/hero.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("hero").innerHTML = data;
   });
 
-  const navItems = document.querySelectorAll('.nav-links a');
+// About Section
+fetch("components/about.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("about").innerHTML = data;
+  });
 
-  navItems.forEach(link => {
+// Portfolio Section
+fetch("components/portfolio.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("portfolio").innerHTML = data;
+  });
 
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-    });
+// Process Section
+fetch("components/process.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("process").innerHTML = data;
+  });
+
+// Testimonials Section
+fetch("components/testimonials.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("testimonials").innerHTML = data;
+  });
+
+// Why Us Section
+fetch("components/why_us.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("why").innerHTML = data;
+  });
+
+// Contact Section
+fetch("components/cta.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("contact").innerHTML = data;
+  });
+
+// Services Section
+fetch("components/services.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("services").innerHTML = data;
+  });
+
+
+// Footer Section
+fetch("components/footer.html")
+  .then(response => response.text())
+  .then(data => {
+
+    document.getElementById("footer").innerHTML = data;
+
+    initializeFCW();
 
   });
 
-}
 
 
 // ─────────────────────────────────────────────
@@ -226,10 +304,12 @@ if (revealItems.length) {
 // FCW
 // ─────────────────────────────────────────────
 
-const fcw = document.getElementById('fcw');
-const fcwBtn = document.getElementById('fcwToggle');
+function initializeFCW() {
 
-if (fcw && fcwBtn) {
+  const fcw = document.getElementById('fcw');
+  const fcwBtn = document.getElementById('fcwToggle');
+
+  if (!fcw || !fcwBtn) return;
 
   fcwBtn.addEventListener('click', e => {
 
@@ -254,3 +334,5 @@ if (fcw && fcwBtn) {
   });
 
 }
+
+
